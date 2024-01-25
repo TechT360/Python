@@ -57,3 +57,5 @@ while True:
     if play_again.lower() != 'yes':
         print("Thanks for playing", name, "have a great day!")
         break
+    
+    # End of project.
