@@ -20,13 +20,12 @@ while True:
         "First, pick a MAX number you can guess up to.\n"
         "Then, try to guess the random number.\n"
         "The number of guesses will be shown when you get it right.\n"
-        "Have fun! "
+        "Have fun!\n"
     )
 
     for char in intro_text:
         print(char, end='', flush=True)
         time.sleep(0.1)
-    print()
     time.sleep(3)
     
 
@@ -69,7 +68,12 @@ while True:
     play_again = input("Do you want to play again? (yes/no): ")
 
     if play_again.lower() != 'yes':
-        print("Thanks for playing", name, "have a great day!")
+        Thanks = ("Thanks for playing ", name, " have a great day!")
+        for char in Thanks:
+            print(char, end='', flush=True)
+            time.sleep(0.1)
+        print()
+        time.sleep(3)
         break
     
     # End of project.
