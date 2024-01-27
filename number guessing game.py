@@ -66,14 +66,16 @@ while True:
     print(name, "you had", guesses, "guesses.")
 
     play_again = input("Do you want to play again? (yes/no): ")
-
+    
     if play_again.lower() != 'yes':
-        Thanks = ("Thanks for playing ", name, " have a great day!")
+        Thanks = ("Thanks for playing " + name + " have a great day!\n")
+        
         for char in Thanks:
             print(char, end='', flush=True)
             time.sleep(0.1)
-        print()
-        time.sleep(3)
+        for char in name:
+            print(char, end='', flush=True)
+            time.sleep(0.1)
         break
     
     # End of project.
