@@ -7,15 +7,29 @@ Date: 23|10|2024.
 """
 
 import random
+import time
 
 while True:
+    
     name = input("Hi there, what shall I address you by: ")
-    print("Pleased to know you,", name + "! Let's get started!")
-    print("This is a number guessing game.")
-    print("First, pick a MAX number you can guess up to.")
-    print("Then, try to guess the random number.")
-    print("The number of guesses will be shown when you get it right.")
-    print("Have fun!")
+
+    intro_text = (
+        "Pleased to know you, " + name + "!\n"
+        "Let's get started!\n"
+        "This is a number guessing game.\n"
+        "First, pick a MAX number you can guess up to.\n"
+        "Then, try to guess the random number.\n"
+        "The number of guesses will be shown when you get it right.\n"
+        "Have fun! "
+    )
+
+    for char in intro_text:
+        print(char, end='', flush=True)
+        time.sleep(0.1)
+    print()
+    time.sleep(3)
+    
+
 
     top_of_range = input("Enter a number: ")
 
