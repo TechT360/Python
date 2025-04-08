@@ -1,0 +1,3 @@
+Name: Terry
+Email: Terryagabi1@gmail.com
+Password: 12345
